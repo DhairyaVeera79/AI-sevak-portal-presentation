@@ -429,48 +429,58 @@ li + li {
   margin-top: 0.5rem;
 }
 
-.workflow-stack {
-  margin-top: 0.2rem;
+.workflow-phases {
+  margin-top: 0.4rem;
   display: grid;
-  gap: 0.42rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
 }
 
-.workflow-step {
-  min-height: 96px;
-  border: 1px solid #dfe2f8;
+.phase-card {
+  position: relative;
   background: #f8f9ff;
-  border-radius: 10px;
-  padding: 0.6rem 0.55rem;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 0.35rem;
+  border: 1px solid #dfe2f8;
+  border-radius: 12px;
+  padding: 0.8rem 0.85rem;
 }
 
-.workflow-step span {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--brand-blue);
-  color: #fff;
-  font-size: 0.76rem;
-  font-weight: 700;
-  display: grid;
-  place-items: center;
+.phase-card h4 {
+  margin: 0 0 0.55rem;
+  font-size: 0.94rem;
+  color: #252a66;
 }
 
-.workflow-step p {
+.phase-card ol {
   margin: 0;
-  font-size: 0.83rem;
+  padding-left: 1.05rem;
+}
+
+.phase-card li {
+  font-size: 0.9rem;
   color: #2e3248;
   line-height: 1.45;
 }
 
-.workflow-arrow {
-  text-align: center;
+.phase-card li + li {
+  margin-top: 0.45rem;
+}
+
+.phase-card:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -0.62rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.2rem;
+  height: 1.2rem;
+  display: grid;
+  place-items: center;
   color: var(--brand-blue);
   font-weight: 800;
   font-size: 0.95rem;
-  line-height: 1;
+  background: #fff;
+  border: 1px solid #d9dcf8;
+  border-radius: 50%;
 }
 
 .footer {
@@ -531,8 +541,17 @@ li + li {
     grid-template-columns: 1fr;
   }
 
-  .workflow-step {
-    min-height: 90px;
+  .workflow-phases {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .phase-card:not(:last-child)::after {
+    content: "↓";
+    right: 50%;
+    top: auto;
+    bottom: -0.82rem;
+    transform: translateX(50%);
   }
 
   .section-head {
