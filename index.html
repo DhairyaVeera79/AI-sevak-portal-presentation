@@ -143,23 +143,23 @@
 
           <div class="diagram-block">
             <h3>Workflow Blueprint (Authoritative 9-Step Flow)</h3>
-            <div class="workflow-grid" role="img" aria-label="Nine-step operational workflow from signup to impact communication">
+            <div class="workflow-stack" role="img" aria-label="Nine-step operational workflow from signup to impact communication">
               <div class="workflow-step"><span>1</span><p>Sevak signs up and completes profile.</p></div>
-              <div class="workflow-arrow">→</div>
+              <div class="workflow-arrow">↓</div>
               <div class="workflow-step"><span>2</span><p>Sevak explores catalog and receives AI suggestions.</p></div>
-              <div class="workflow-arrow">→</div>
+              <div class="workflow-arrow">↓</div>
               <div class="workflow-step"><span>3</span><p>Sevak joins or requests approval-based seva.</p></div>
-              <div class="workflow-arrow">→</div>
+              <div class="workflow-arrow">↓</div>
               <div class="workflow-step"><span>4</span><p>Leader or coordinator approves where required.</p></div>
-              <div class="workflow-arrow">→</div>
+              <div class="workflow-arrow">↓</div>
               <div class="workflow-step"><span>5</span><p>Onboarding kits and AI support establish readiness.</p></div>
-              <div class="workflow-arrow">→</div>
+              <div class="workflow-arrow">↓</div>
               <div class="workflow-step"><span>6</span><p>Sevak logs hours, submits expenses where applicable, collaborates, and posts updates.</p></div>
-              <div class="workflow-arrow">→</div>
+              <div class="workflow-arrow">↓</div>
               <div class="workflow-step"><span>7</span><p>Leaders and admins moderate, summarize, and monitor health.</p></div>
-              <div class="workflow-arrow">→</div>
+              <div class="workflow-arrow">↓</div>
               <div class="workflow-step"><span>8</span><p>Timeline and metrics feed reporting and continuous improvement.</p></div>
-              <div class="workflow-arrow">→</div>
+              <div class="workflow-arrow">↓</div>
               <div class="workflow-step"><span>9</span><p>Approved impact stories support leadership communication.</p></div>
             </div>
           </div>
@@ -169,10 +169,13 @@
             <div class="architecture" role="img" aria-label="High-level architecture diagram">
               <div class="arch-node">Users (C1/C2/C3/C4/Admin)</div>
               <div class="arch-connector">↓</div>
-              <div class="arch-node emphasis">Portal Web (Next.js + TypeScript + Tailwind)</div>
+              <div class="arch-row two-col">
+                <div class="arch-node emphasis">Web Portal (Next.js + TypeScript + Tailwind)</div>
+                <div class="arch-node emphasis">Future Mobile App (Flutter)</div>
+              </div>
               <div class="arch-connector">↓</div>
               <div class="arch-row two-col">
-                <div class="arch-node">API Services (NestJS)</div>
+                <div class="arch-node">Unified Backend APIs (Node.js / NestJS)</div>
                 <div class="arch-node">RBAC + Audit Enforcement</div>
               </div>
               <div class="arch-connector">↓</div>
@@ -246,18 +249,18 @@
             </div>
           </div>
 
-          <div class="roadmap-flow" role="img" aria-label="Roadmap timeline from April to September with directional flow">
+          <div class="roadmap-stack" role="img" aria-label="Roadmap timeline from April to September with directional flow">
             <article class="roadmap-node"><span>April 2026</span><h3>V0 • Discovery</h3><p>Finalize role matrix, workflow rules, moderation policies, and MVP acceptance criteria.</p></article>
-            <div class="roadmap-arrow">→</div>
+            <div class="roadmap-arrow">↓</div>
             <article class="roadmap-node"><span>May 2026</span><h3>V1 • Web Portal MVP</h3><p>Registration, profile, seva catalog, join/request workflows, and foundational dashboards.</p></article>
-            <div class="roadmap-arrow">→</div>
+            <div class="roadmap-arrow">↓</div>
             <article class="roadmap-node"><span>June 2026</span><h3>V2 • Collaboration Layer</h3><p>Messaging, logs timeline, moderation controls, and mobile app planning kickoff.</p></article>
-            <div class="roadmap-arrow">→</div>
+            <div class="roadmap-arrow">↓</div>
             <article class="roadmap-node"><span>July 2026</span><h3>V3 • AI Productivity</h3><p>Rules-based recommendations, onboarding assistant, and reviewable summaries.</p></article>
-            <div class="roadmap-arrow">→</div>
+            <div class="roadmap-arrow">↓</div>
             <article class="roadmap-node"><span>August 2026</span><h3>V4 • Stabilization</h3><p>Operational hardening, audit visibility, and offering-ready freeze by 31 August.</p></article>
-            <div class="roadmap-arrow">→</div>
-            <article class="roadmap-node"><span>September 2026</span><h3>Showcase Readiness</h3><p>Controlled UAT, leadership walkthrough, and extension path for mobile companion rollout.</p></article>
+            <div class="roadmap-arrow">↓</div>
+            <article class="roadmap-node"><span>September 2026</span><h3>Showcase Readiness</h3><p>Controlled UAT, leadership walkthrough, and extension path for Flutter mobile companion rollout via Node APIs.</p></article>
           </div>
 
           <div class="highlight kpi-block">
