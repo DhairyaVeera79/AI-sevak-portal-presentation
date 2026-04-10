@@ -3,26 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Sevak Portal | Presentation</title>
+    <title>AI Sevak Portal | Stakeholder Presentation</title>
     <meta
       name="description"
-      content="AI Sevak Portal presentation website for SRLC: problem, objective, solution, technical approach, and expected impact."
+      content="Stakeholder presentation for AI Sevak Portal covering problem, solution, users, roadmap to September 2026, and implementation dependencies."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero" id="top">
       <div class="container">
-        <p class="eyebrow">SRLC Initiative</p>
+        <nav class="top-nav" aria-label="Section navigation">
+          <a href="#problem">Problem</a>
+          <a href="#solution">Solution</a>
+          <a href="#users">Users</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#dependencies">Dependencies</a>
+        </nav>
+
+        <p class="eyebrow">Shrimad Rajchandra Love and Care • Internal Initiative</p>
         <h1>AI Sevak Portal</h1>
         <p class="subtitle">
-          A unified, AI-assisted operations platform to streamline volunteer coordination,
-          improve governance, and scale seva impact with clarity.
+          A unified, AI-assisted operating platform to standardize volunteer coordination,
+          strengthen governance, and improve measurable seva outcomes across SRLC.
         </p>
-        <div class="pill-row">
-          <span class="pill">Submission Deck Site</span>
-          <span class="pill">Single-Page</span>
-          <span class="pill">GitHub Pages Ready</span>
+
+        <div class="hero-panel">
+          <p><strong>Presentation Goal:</strong> Submit a complete, stakeholder-facing plan for execution by Friday, 10 April.</p>
+          <p><strong>Delivery Horizon:</strong> Build completion by 31 August 2026, offering-ready by September 2026.</p>
         </div>
       </div>
     </header>
@@ -30,139 +38,194 @@
     <main>
       <section class="section" id="problem">
         <div class="container">
-          <h2>1) Problem Statement</h2>
+          <h2>1) The Problem We Are Solving</h2>
           <p>
-            As seva initiatives expand, coordination remains fragmented across manual flows,
-            disconnected communication channels, and repeated onboarding efforts.
-          </p>
-          <ul>
-            <li>Volunteer intake and allocation are inconsistent and difficult to track.</li>
-            <li>Updates are scattered across informal channels, causing visibility gaps.</li>
-            <li>Leaders spend high time on repetitive onboarding and follow-ups.</li>
-            <li>Unstructured data limits reporting quality and impact storytelling.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section alt" id="objective">
-        <div class="container">
-          <h2>2) Objective</h2>
-          <p>
-            Build one internal platform that standardizes the complete volunteer lifecycle
-            while preserving a human-led, AI-assisted operating model.
+            As seva initiatives scale, current operations rely on fragmented manual processes,
+            which limits coordination quality, accountability, and timely reporting.
           </p>
           <div class="grid two">
             <article class="card">
-              <h3>Operational Goals</h3>
+              <h3>Current Operational Gaps</h3>
               <ul>
-                <li>Reduce onboarding and allocation turnaround time.</li>
-                <li>Centralize communication, task updates, and evidence.</li>
-                <li>Enable role-based governance and approvals.</li>
+                <li>Volunteer intake and allocation are inconsistent across sevas.</li>
+                <li>Coordination happens on disconnected channels, leading to missed updates.</li>
+                <li>Onboarding is repeatedly re-explained by leaders and coordinators.</li>
+                <li>Logs and outcomes are not uniformly structured for analysis.</li>
               </ul>
             </article>
             <article class="card">
-              <h3>Experience Goals</h3>
+              <h3>Why This Matters Now</h3>
               <ul>
-                <li>Improve volunteer clarity from registration to execution.</li>
-                <li>Provide timely context for new and mid-cycle joiners.</li>
-                <li>Create reliable visibility for C1, C2, C3, and C4 roles.</li>
+                <li>Leadership bandwidth is increasingly consumed by coordination overhead.</li>
+                <li>Scaling without standards introduces process and governance risk.</li>
+                <li>Data quality limits evidence-based decisions and storytelling.</li>
+                <li>A shared operations backbone is now mission-critical.</li>
               </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="solution">
+      <section class="section alt" id="solution">
         <div class="container">
-          <h2>3) Proposed Solution</h2>
+          <h2>2) The Proposed Solution</h2>
           <p>
-            AI Sevak Portal brings registration, allocation, onboarding, collaboration,
-            logs, and expense workflows into one structured system.
+            AI Sevak Portal is a single internal system for the full volunteer lifecycle:
+            registration, allocation, onboarding, execution, reporting, and governed storytelling.
           </p>
           <div class="grid three">
             <article class="card">
-              <h3>Core Modules</h3>
+              <h3>Operational Modules</h3>
               <ul>
-                <li>Profile setup and seva discovery</li>
-                <li>Structured onboarding and progress briefings</li>
-                <li>Calendar, hour logging, and seva messaging</li>
-                <li>Logs moderation and transparent expense tracking</li>
+                <li>Volunteer profile setup and seva discovery</li>
+                <li>Role-based onboarding (general and seva-specific)</li>
+                <li>Calendar, attendance-hours logging, and seva messaging</li>
+                <li>Moderated logs and transparent expense management</li>
               </ul>
             </article>
             <article class="card">
-              <h3>AI Assistance</h3>
+              <h3>AI Assistance (Human-Led)</h3>
               <ul>
-                <li>Seva recommendation by skills and availability</li>
-                <li>Onboarding Q&amp;A from approved internal content</li>
-                <li>Progress summarization for leaders and teams</li>
+                <li>Recommendation support for volunteer-seva fit</li>
+                <li>Onboarding Q&amp;A from approved institutional content</li>
+                <li>Progress summaries for joiners, coordinators, and leaders</li>
               </ul>
             </article>
             <article class="card">
-              <h3>Governance</h3>
+              <h3>Governance by Design</h3>
               <ul>
-                <li>Role-based access (C1/C2/C3/C4 + Admin)</li>
-                <li>Human review before official story publishing</li>
-                <li>Audit-friendly decision and moderation trails</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section alt" id="technical">
-        <div class="container">
-          <h2>4) Technical Approach</h2>
-          <p>
-            Delivery follows a phased architecture: mock-first validation, then robust
-            backend and database integration for production reliability.
-          </p>
-          <div class="grid two">
-            <article class="card">
-              <h3>Platform Stack</h3>
-              <ul>
-                <li>Frontend: Next.js + TypeScript + Tailwind</li>
-                <li>Backend: NestJS + TypeScript APIs</li>
-                <li>Data Layer: PostgreSQL + Prisma</li>
-                <li>Security Model: Auth + RBAC + audit controls</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Execution Plan</h3>
-              <ul>
-                <li>Phase 1: MVP operations baseline</li>
-                <li>Phase 2: collaboration and moderated logs</li>
-                <li>Phase 3: AI assistance and pilot rollout</li>
-                <li>Phase 4+: stabilization and scaling readiness</li>
+                <li>Role-based access controls (C1/C2/C3/C4/Admin)</li>
+                <li>Human review before official publications and stories</li>
+                <li>Audit trails for approvals, edits, and moderation actions</li>
               </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="impact">
+      <section class="section" id="users">
         <div class="container">
-          <h2>5) Expected Impact &amp; Future Scope</h2>
-          <p>
-            The portal is designed to convert fragmented operations into a repeatable,
-            transparent, and scalable seva execution model.
-          </p>
+          <h2>3) Who Inside SRLC Will Use It and Benefit</h2>
           <div class="grid two">
             <article class="card">
-              <h3>Near-Term Impact</h3>
+              <h3>Primary User Groups</h3>
               <ul>
-                <li>Faster volunteer-to-seva matching and onboarding</li>
-                <li>Reduced manual coordination load for leaders</li>
-                <li>Consistent logs for reporting and visibility</li>
-                <li>Better decision support through structured data</li>
+                <li><strong>C4 Sevaks:</strong> clear joining path, responsibilities, and status visibility.</li>
+                <li><strong>C3 Coordinators:</strong> better day-to-day execution tracking and follow-up.</li>
+                <li><strong>C2 Seva Leaders:</strong> reduced administrative load and stronger controls.</li>
+                <li><strong>C1 Trustees:</strong> portfolio-level visibility and decision-ready summaries.</li>
+                <li><strong>Platform Admins:</strong> policy enforcement, moderation, and compliance support.</li>
               </ul>
             </article>
             <article class="card">
-              <h3>Future Scope</h3>
+              <h3>Benefit by Value Type</h3>
               <ul>
-                <li>Wider rollout across additional seva programs</li>
-                <li>Enhanced analytics and capacity planning dashboards</li>
-                <li>Stronger donation-to-impact storytelling workflows</li>
-                <li>Continuous refinement with pilot feedback loops</li>
+                <li><strong>Efficiency:</strong> less manual rework in onboarding and coordination.</li>
+                <li><strong>Quality:</strong> standardized workflows across teams and sevas.</li>
+                <li><strong>Decision Support:</strong> dependable data for planning and reviews.</li>
+                <li><strong>Institutional Memory:</strong> searchable timeline of execution and learnings.</li>
+                <li><strong>Transparency:</strong> trusted impact narratives from moderated evidence.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="roadmap">
+        <div class="container">
+          <h2>4) What Success Looks Like by September 2026 (Roadmap)</h2>
+          <p>
+            The roadmap is designed for practical execution with phased release discipline,
+            clear validation checkpoints, and stakeholder visibility.
+          </p>
+          <div class="timeline">
+            <article class="timeline-item">
+              <h3>April 2026 • Definition and Alignment</h3>
+              <p>Finalize PRD, role matrix, governance rules, and MVP acceptance criteria.</p>
+            </article>
+            <article class="timeline-item">
+              <h3>May–June 2026 • Core MVP and Collaboration</h3>
+              <p>Deliver registration, allocation, onboarding, dashboard basics, messaging, and logs moderation.</p>
+            </article>
+            <article class="timeline-item">
+              <h3>July 2026 • AI Assistance Pilot</h3>
+              <p>Run pilot sevas with recommendation support, onboarding Q&amp;A, and progress summarization.</p>
+            </article>
+            <article class="timeline-item">
+              <h3>August 2026 • Stabilization</h3>
+              <p>Close critical gaps, improve reliability, and freeze offering-ready build by 31 August.</p>
+            </article>
+            <article class="timeline-item">
+              <h3>September 2026 • Stakeholder Readiness</h3>
+              <p>Run controlled UAT, prepare leadership walkthrough, and package final offering narrative.</p>
+            </article>
+          </div>
+          <div class="highlight">
+            <h3>Success Criteria by September 2026</h3>
+            <ul>
+              <li>Majority of pilot sevas executing through standardized portal workflows.</li>
+              <li>Measurable reduction in repetitive onboarding and manual follow-ups.</li>
+              <li>Consistent weekly logging and stronger leadership visibility.</li>
+              <li>Trusted, moderated impact storytelling linked to operational evidence.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="dependencies">
+        <div class="container">
+          <h2>5) Key Technical and Operational Dependencies</h2>
+          <div class="grid two">
+            <article class="card">
+              <h3>Technical Dependencies</h3>
+              <ul>
+                <li>Secure authentication and role-based authorization controls.</li>
+                <li>Reliable data layer for profiles, logs, media metadata, and expenses.</li>
+                <li>Notification and reminder capability for execution workflows.</li>
+                <li>AI integration with transparent recommendation rationale.</li>
+                <li>Audit logging for approvals, moderation, and policy actions.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Operational Dependencies</h3>
+              <ul>
+                <li>Finalized SOPs for general and seva-specific onboarding.</li>
+                <li>Clear role ownership across C1/C2/C3/C4 and Admin teams.</li>
+                <li>Pilot participation and feedback cadence from seva leaders.</li>
+                <li>Data discipline for profile completeness, logs, and approvals.</li>
+                <li>Story governance standards for privacy, dignity, and consent.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="next-steps">
+        <div class="container">
+          <h2>Next Steps for Each Team from Here</h2>
+          <div class="grid three">
+            <article class="card">
+              <h3>Product and Program Team</h3>
+              <ul>
+                <li>Finalize MVP scope, acceptance criteria, and SOP content.</li>
+                <li>Confirm pilot sevas and owner-level sign-offs.</li>
+                <li>Publish milestone review cadence through September 2026.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Engineering and Data Team</h3>
+              <ul>
+                <li>Lock architecture baseline and environment readiness plan.</li>
+                <li>Prioritize RBAC, auditability, and resilient core workflows.</li>
+                <li>Define measurable quality gates for each release phase.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Operations and Governance Team</h3>
+              <ul>
+                <li>Establish moderation, privacy, and publish governance policies.</li>
+                <li>Train pilot coordinators on process discipline and reporting standards.</li>
+                <li>Track adoption and escalate blockers through weekly governance reviews.</li>
               </ul>
             </article>
           </div>
@@ -172,7 +235,7 @@
 
     <footer class="footer">
       <div class="container footer-row">
-        <p>AI Sevak Portal • SRLC Presentation</p>
+        <p>AI Sevak Portal • Stakeholder Presentation • SRLC</p>
         <a href="#top" aria-label="Back to top">Back to top ↑</a>
       </div>
     </footer>
