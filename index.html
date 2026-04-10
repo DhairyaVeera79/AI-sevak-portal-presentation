@@ -73,22 +73,13 @@
             </article>
           </div>
 
-          <div class="grid two mt">
+          <div class="single-row mt">
             <article class="card">
               <h3>Core Problem Statement</h3>
               <p>
                 The current volunteer operations model is not scalable. SRLC needs a unified system that standardizes
                 registration, allocation, onboarding, collaboration, and evidence capture while preserving human oversight.
               </p>
-            </article>
-            <article class="card">
-              <h3>Terminology and Context</h3>
-              <ul>
-                <li><strong>Seva:</strong> a service initiative or project.</li>
-                <li><strong>Sevak:</strong> volunteer contributor.</li>
-                <li><strong>Mumukshu:</strong> mission-aligned aspirant, potentially a volunteer.</li>
-                <li><strong>Seva Leader / POC:</strong> operational ownership and coordination roles.</li>
-              </ul>
             </article>
           </div>
         </div>
@@ -140,29 +131,37 @@
           </div>
 
           <div class="module-grid">
-            <article class="card"><h3>4.1 Registration &amp; Profile</h3><p>Capture identity, skills, availability, interests, location, and readiness markers for searchable volunteer profiles.</p></article>
-            <article class="card"><h3>4.2 Seva Allocation &amp; Discovery</h3><p>Catalog-based matching with open-join and approval-based flows, capacity controls, and over-commitment checks.</p></article>
-            <article class="card"><h3>4.3 Structured Onboarding</h3><p>General plus seva-specific onboarding with AI Q&amp;A and mid-cycle context summaries from approved content.</p></article>
-            <article class="card"><h3>4.4 Calendar &amp; Time Logging</h3><p>Daily/weekly effort logging per seva with schedule discipline and future optional external calendar sync.</p></article>
-            <article class="card"><h3>4.5 Messaging</h3><p>Seva-scoped operational communication with role-tagged announcements and reminders.</p></article>
-            <article class="card"><h3>4.6 Logs &amp; Timeline</h3><p>Text/image/video updates with moderation, review, and publish controls for reliable institutional memory.</p></article>
-            <article class="card"><h3>4.7 Impact Storytelling</h3><p>Transform moderated logs into evidence-backed impact stories with dignity, consent, and traceability guardrails.</p></article>
-            <article class="card"><h3>4.8 Expense Logging</h3><p>Role-gated expense submissions with attachments, reviewer metadata, and status lifecycle controls.</p></article>
+            <article class="card"><h3>Registration &amp; Profile</h3><p>Capture identity, skills, availability, interests, location, and readiness markers for searchable volunteer profiles.</p></article>
+            <article class="card"><h3>Seva Allocation &amp; Discovery</h3><p>Catalog-based matching with open-join and approval-based flows, capacity controls, and over-commitment checks.</p></article>
+            <article class="card"><h3>Structured Onboarding</h3><p>General plus seva-specific onboarding with AI Q&amp;A and mid-cycle context summaries from approved content.</p></article>
+            <article class="card"><h3>Calendar &amp; Time Logging</h3><p>Daily/weekly effort logging per seva with schedule discipline and future optional external calendar sync.</p></article>
+            <article class="card"><h3>Messaging</h3><p>Seva-scoped operational communication with role-tagged announcements and reminders.</p></article>
+            <article class="card"><h3>Logs &amp; Timeline</h3><p>Text/image/video updates with moderation, review, and publish controls for reliable institutional memory.</p></article>
+            <article class="card"><h3>Impact Storytelling</h3><p>Transform moderated logs into evidence-backed impact stories with dignity, consent, and traceability guardrails.</p></article>
+            <article class="card"><h3>Expense Logging</h3><p>Role-gated expense submissions with attachments, reviewer metadata, and status lifecycle controls.</p></article>
           </div>
 
           <div class="diagram-block">
             <h3>Workflow Blueprint (Authoritative 9-Step Flow)</h3>
-            <ol class="numbered-list">
-              <li>Sevak signs up and completes profile.</li>
-              <li>Sevak explores catalog and receives AI suggestions.</li>
-              <li>Sevak joins or requests approval-based seva.</li>
-              <li>Leader/coordinator approves where required.</li>
-              <li>Onboarding kits and AI support establish readiness.</li>
-              <li>Sevak logs hours, collaborates, and posts updates.</li>
-              <li>Leaders/admin moderate, summarize, and monitor health.</li>
-              <li>Timeline and metrics feed reporting and improvement.</li>
-              <li>Approved impact stories support leadership communication.</li>
-            </ol>
+            <div class="workflow-grid" role="img" aria-label="Nine-step operational workflow from signup to impact communication">
+              <div class="workflow-step"><span>1</span><p>Sevak signs up and completes profile.</p></div>
+              <div class="workflow-arrow">→</div>
+              <div class="workflow-step"><span>2</span><p>Sevak explores catalog and receives AI suggestions.</p></div>
+              <div class="workflow-arrow">→</div>
+              <div class="workflow-step"><span>3</span><p>Sevak joins or requests approval-based seva.</p></div>
+              <div class="workflow-arrow">→</div>
+              <div class="workflow-step"><span>4</span><p>Leader or coordinator approves where required.</p></div>
+              <div class="workflow-arrow">→</div>
+              <div class="workflow-step"><span>5</span><p>Onboarding kits and AI support establish readiness.</p></div>
+              <div class="workflow-arrow">→</div>
+              <div class="workflow-step"><span>6</span><p>Sevak logs hours, submits expenses where applicable, collaborates, and posts updates.</p></div>
+              <div class="workflow-arrow">→</div>
+              <div class="workflow-step"><span>7</span><p>Leaders and admins moderate, summarize, and monitor health.</p></div>
+              <div class="workflow-arrow">→</div>
+              <div class="workflow-step"><span>8</span><p>Timeline and metrics feed reporting and continuous improvement.</p></div>
+              <div class="workflow-arrow">→</div>
+              <div class="workflow-step"><span>9</span><p>Approved impact stories support leadership communication.</p></div>
+            </div>
           </div>
 
           <div class="diagram-block">
@@ -247,13 +246,18 @@
             </div>
           </div>
 
-          <div class="timeline-grid">
-            <article class="timeline-card"><span>April 2026</span><h3>V0 • Discovery and Process Design</h3><p>Finalize role matrix, workflow rules, moderation policies, and MVP acceptance criteria.</p></article>
-            <article class="timeline-card"><span>May 2026</span><h3>V1 • Core Operations MVP</h3><p>Registration, profile, seva catalog, join/request flows, and foundational dashboards.</p></article>
-            <article class="timeline-card"><span>June 2026</span><h3>V2 • Structured Collaboration</h3><p>Seva messaging, logs timeline with media, and moderation workflows for governance.</p></article>
-            <article class="timeline-card"><span>July 2026</span><h3>V3 • AI-Assisted Productivity</h3><p>Rules-based recommendations, onboarding assistant, and reviewable summaries.</p></article>
-            <article class="timeline-card"><span>August 2026</span><h3>V4 • Reliability and Reporting</h3><p>Operational hardening, audit visibility, and offering-ready freeze by 31 August.</p></article>
-            <article class="timeline-card"><span>September 2026</span><h3>Showcase Readiness</h3><p>Controlled UAT, leadership walkthrough, and final narrative packaging.</p></article>
+          <div class="roadmap-flow" role="img" aria-label="Roadmap timeline from April to September with directional flow">
+            <article class="roadmap-node"><span>April 2026</span><h3>V0 • Discovery</h3><p>Finalize role matrix, workflow rules, moderation policies, and MVP acceptance criteria.</p></article>
+            <div class="roadmap-arrow">→</div>
+            <article class="roadmap-node"><span>May 2026</span><h3>V1 • Web Portal MVP</h3><p>Registration, profile, seva catalog, join/request workflows, and foundational dashboards.</p></article>
+            <div class="roadmap-arrow">→</div>
+            <article class="roadmap-node"><span>June 2026</span><h3>V2 • Collaboration Layer</h3><p>Messaging, logs timeline, moderation controls, and mobile app planning kickoff.</p></article>
+            <div class="roadmap-arrow">→</div>
+            <article class="roadmap-node"><span>July 2026</span><h3>V3 • AI Productivity</h3><p>Rules-based recommendations, onboarding assistant, and reviewable summaries.</p></article>
+            <div class="roadmap-arrow">→</div>
+            <article class="roadmap-node"><span>August 2026</span><h3>V4 • Stabilization</h3><p>Operational hardening, audit visibility, and offering-ready freeze by 31 August.</p></article>
+            <div class="roadmap-arrow">→</div>
+            <article class="roadmap-node"><span>September 2026</span><h3>Showcase Readiness</h3><p>Controlled UAT, leadership walkthrough, and extension path for mobile companion rollout.</p></article>
           </div>
 
           <div class="highlight kpi-block">
